@@ -1586,6 +1586,35 @@ entries:
     - argo-0.1.0.tgz
     version: 0.1.0
   argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Fixed]: Create service account for repo server by default"
+    apiVersion: v2
+    appVersion: v2.2.5
+    created: "2022-03-12T17:47:27.901034261Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.12.17
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: f003277eb303f9bf90cac0bf941d882c5ca4d920621a7e3952ac94170f755447
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argo-cd-3.35.3/argo-cd-3.35.3.tgz
+    version: 3.35.3
   - apiVersion: v2
     appVersion: 2.0.1
     created: "2022-02-03T14:03:05.687248+01:00"
@@ -5528,6 +5557,30 @@ entries:
     - argo-ci-0.1.0.tgz
     version: 0.1.0
   argo-events:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Add aggregate-roles (sync with upstream manifests)"
+    apiVersion: v2
+    appVersion: v1.6.0
+    created: "2022-03-12T17:47:28.105711233Z"
+    description: A Helm chart to install Argo-Events in k8s Cluster
+    digest: 5304b194aa821516762c0d624b2e3a2525a839e2cbacfccea001ae1fed7c5b57
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-events/assets/logo.png
+    keywords:
+    - argo-events
+    - sensor-controller
+    - eventsource-controller
+    - eventbus-controller
+    maintainers:
+    - name: VaibhavPage
+    - name: whynowy
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argo-events-1.12.0/argo-events-1.12.0.tgz
+    version: 1.12.0
   - apiVersion: v2
     appVersion: 1.3.1
     created: "2022-02-03T14:03:05.721268+01:00"
@@ -6021,6 +6074,24 @@ entries:
     - argo-lite-0.1.0.tgz
     version: 0.1.0
   argo-rollouts:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Ability to define dashboard service node port"
+    apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-03-12T17:47:28.342824834Z"
+    description: A Helm chart for Argo Rollouts
+    digest: 74e04b415742ef598169eb5df4b436fa3681b77cbabf43859e8b98f2eeac1e8c
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    maintainers:
+    - name: alexmt
+    - name: dthomson25
+    - name: jessesuen
+    name: argo-rollouts
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argo-rollouts-2.10.0/argo-rollouts-2.10.0.tgz
+    version: 2.10.0
   - apiVersion: v1
     appVersion: 0.10.2
     created: "2022-02-03T14:03:05.770129+01:00"
@@ -6339,6 +6410,28 @@ entries:
   argo-workflows:
   - annotations:
       artifacthub.io/changes: |
+        - "[Added]: Add encryptionOptions for S3 based artifactRepository"
+    apiVersion: v2
+    appVersion: v3.2.9
+    created: "2022-03-12T17:47:28.534198524Z"
+    description: A Helm chart for Argo Workflows
+    digest: b3cd0511f5eac7d8738937463311297f3e678d06cc8d7db3d440f946d939ef05
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: benjaminws
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argo-workflows-0.13.0/argo-workflows-0.13.0.tgz
+    version: 0.13.0
+  - annotations:
+      artifacthub.io/changes: |
         - "[Changed]: Add encryptionOptions for S3 based artifactRepository"
     apiVersion: v2
     appVersion: v3.2.6
@@ -6379,6 +6472,27 @@ entries:
     - argo-workflows-0.1.0.tgz
     version: 0.1.0
   argocd-applicationset:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: extraContainers support in Deployment resource"
+    apiVersion: v2
+    appVersion: v0.3.0
+    created: "2022-03-12T17:47:28.731623733Z"
+    description: A Helm chart for installing ArgoCD ApplicationSet
+    digest: c3904ab8540c777f0ec92f47cfacc822a488fb62d25d379488db46d8d19f058a
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argocd-applicationset.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - appset
+    - gitops
+    maintainers:
+    - name: maruina
+    name: argocd-applicationset
+    type: application
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argocd-applicationset-1.11.0/argocd-applicationset-1.11.0.tgz
+    version: 1.11.0
   - apiVersion: v2
     appVersion: v0.1.0
     created: "2022-02-03T14:03:05.778701+01:00"
@@ -6469,6 +6583,30 @@ entries:
     urls:
     - argocd-applicationset-0.1.0.tgz
     version: 0.1.0
+  argocd-image-updater:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Ability to manage secret containing the ArgoCD API token"
+    apiVersion: v2
+    appVersion: v0.11.3
+    created: "2022-03-12T17:47:28.918370979Z"
+    description: A Helm chart for Argo CD Image Updater, a tool to automatically update
+      the container images of Kubernetes workloads which are managed by Argo CD
+    digest: cfae1b71b8e894b67dbaab146ce2c0e4bae43df068524e77b177e2c6c8e16d87
+    home: https://github.com/argoproj-labs/argocd-image-updater
+    icon: https://argocd-image-updater.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-image-updater
+    type: application
+    urls:
+    - https://github.com/bgeens2/argo-helm/releases/download/argocd-image-updater-0.7.0/argocd-image-updater-0.7.0.tgz
+    version: 0.7.0
   argocd-notifications:
   - apiVersion: v2
     appVersion: 1.1.1
@@ -6875,4 +7013,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2022-02-03T14:03:04.89129+01:00"
+generated: "2022-03-12T17:47:28.922084875Z"
